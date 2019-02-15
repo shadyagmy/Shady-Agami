@@ -36,10 +36,12 @@ i{
 }
 
 ::selection {
-    background: $color-premier; /* WebKit/Blink Browsers */
+    background: $color-pink;
+    color: #eee; /* WebKit/Blink Browsers */
 }
   ::-moz-selection {
-    background: $color-premier; /* Gecko Browsers */
+    background: $color-pink;
+    color: #eee; /* Gecko Browsers */
 }
 
 

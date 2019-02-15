@@ -44,11 +44,13 @@ i {
   font-family: fontawesome; }
 
 ::selection {
-  background: #2F2FA1;
+  background: #f64c72;
+  color: #eee;
   /* WebKit/Blink Browsers */ }
 
 ::-moz-selection {
-  background: #2F2FA1;
+  background: #f64c72;
+  color: #eee;
   /* Gecko Browsers */ }
 
 .heading-first {
