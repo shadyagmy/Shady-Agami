@@ -1,0 +1,28 @@
+
+
+
+.header{
+    position: relative;
+   
+    background-image: linear-gradient(to right bottom,rgba($color-premier-dark,.9),
+                        rgba($color-premier-light,.7));
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    width: 100%;
+    overflow: hidden;
+
+
+    &__text{
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        color:#eee;
+        width: 80%;
+
+        &-h3{
+            color:inherit
+        }
+    }
+}

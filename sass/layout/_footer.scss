@@ -1,0 +1,106 @@
+.footer{
+    text-align: center;
+    margin-top: 10rem;
+    
+    &__cont {
+        padding: 1rem 0 0rem;
+        display: flex;
+        align-items: center;
+        height: 25rem;
+
+        
+    }
+    &__image{
+        flex-basis: 35%;
+        clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%);
+        align-self: stretch;
+        overflow: hidden;
+        @include respond(tab-port){
+            display: none;
+        }
+
+        img{
+            width: 100%;
+        }
+    }
+
+    &__info{
+        flex: 1;
+        align-self: stretch;
+        clip-path: polygon(13.9% 0, 100% 0, 100% 100%, 0% 100%);
+        margin-left: -10.5%;
+        @include respond(tab-port){
+            clip-path: polygon(15% 0, 100% 0, 100% 100%, -8% 100%);
+        }
+        @include respond(phone){
+           
+            
+        }
+        
+    }
+
+    &__list{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 3rem 2.5rem 0rem 9rem;
+        background: linear-gradient(to right bottom,rgba($color-premier-dark,.92),
+                    rgba($color-premier-light,.82));;
+        overflow: hidden;
+        
+        @include respond(phone){
+            flex-direction: row;
+            padding:  2rem 2.5rem 1rem 23%;
+             
+         }
+
+    }
+
+    &__li{
+        display: inline-block;
+        text-align: left;
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin-bottom: 4rem;
+        transition: all .3s;
+
+        @include respond(phone){
+           flex-basis: 100%;
+           margin-bottom: .5rem;
+            
+        }
+
+
+        &:hover a {
+            color: $color-pink;
+        }
+
+       
+
+        a{
+            color: $color-gary-2;
+            display: flex;
+            align-items: center;
+            text-transform: capitalize;
+            transition: all .3s;
+            
+
+
+            i{
+                display: inline-block;
+                padding-right: 7px;
+                color: $color-pink;
+                font-size: 3rem;
+                position: relative;
+                top: 1px;
+                right: 7px;
+                transition: all .3s;
+
+            }
+        }
+        
+    }
+}

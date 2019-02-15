@@ -1,0 +1,107 @@
+.project-describtion{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 15rem 1.5rem;
+    background: linear-gradient(to left top,rgba($color-pink-grey,.99),
+                rgba(($color-pink-grey+#444),99));
+    text-align: center;
+    z-index: 999999;
+    overflow-y: scroll;
+    visibility: hidden;
+    opacity: 0;
+    @include respond(phone){
+        padding: 11rem 1.5rem 6rem;
+    }
+    &__close{
+        position: absolute;
+        top: 4rem;
+        right: 5rem;
+        color: $color-gary-2;
+        font-size: 3.5rem;
+        transition: all .4s;
+
+        &:hover{
+            transform: rotateZ(-90deg);
+            color: $color-pink;
+            font-size: 3.8rem;
+        }
+        @include respond(phone){
+            top: 3rem;
+            right: 3rem;
+        }
+    }
+
+
+    &__buttons{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    &__link{
+        background:$color-pink;
+        color: $color-gary-2;
+        display: inline-block;
+        padding: 1.5rem 3rem;
+    }
+
+    &__codeLink{
+        background:$color-gary-2;
+        color: $color-pink;
+        display: inline-block;
+        padding: 1.5rem 3rem;
+        transition: all .3s;
+
+
+
+        
+
+        
+
+    }
+
+
+    &__btnClose{
+        color: $color-gary-blue;
+        background: $color-gary-2;
+        padding: 1.3rem 2rem;
+        font-size: 1.9rem;
+        display: inline-block;
+ 
+    }
+    h2{
+        color: $color-white;
+    }
+    img{
+        width: 70%;
+        border-radius: 4px;
+        box-shadow: 0 1rem 2rem rgba($color-gary-2,.1);
+    }
+
+    p{
+        color: $color-white;
+        font-size: 2.2rem;
+        width: 80%;
+        margin: 26px auto 15px;
+    }
+
+}
+
+#Project-Your-own-website:target,
+#Project-Natour:target,
+#Project-Tanatos:target,
+#Project-Conrad:target,
+#Project-Tinker:target,
+#Project-Developer:target{
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s;
+
+}
+
+

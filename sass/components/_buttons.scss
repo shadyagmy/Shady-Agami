@@ -1,0 +1,52 @@
+.btn{
+    
+    padding: 1.7rem 3.7rem;
+    border: none;
+    border-radius: .5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 3rem;
+    cursor: pointer;
+    box-shadow: 0 2rem 3rem rgba($color-dark,.2);
+    -webkit-transition: all .25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -moz-transition: all .25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all .25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all .25s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+    &:hover,
+    &:active{
+        box-shadow: 0 3rem 5rem rgba($color-dark,.4);
+        transform: translateY(-.5rem);
+    }
+    &--blue{
+        background: $color-pink;
+        color: $color-white;
+        &:hover{
+            background: $color-pink + #000;
+            color: $color-gary-blue;
+        }
+    }
+
+    &--text{
+        display: inline-block;
+        padding: 1rem ;
+        border-radius: .5rem;
+        font-size: 1.4rem;
+        text-transform: capitalize;
+        font-weight: 700;
+        box-shadow: 0 1rem 1.5rem rgba($color-dark,.1);
+        color: $color-dark;
+        background: $color-gary-2;
+        border: 2px solid $color-premier;
+        margin-top: 1.5rem;
+        -webkit-transition: all .25s cubic-bezier(0.645, 0.045, 0.355, 1);
+        -moz-transition: all .25s cubic-bezier(0.645, 0.045, 0.355, 1);
+        -o-transition: all .25s cubic-bezier(0.645, 0.045, 0.355, 1);
+        transition: all .25s cubic-bezier(0.645, 0.045, 0.355, 1);
+        &:hover{
+            background: $color-premier;
+            transform: translateY(-.3rem);
+        }
+    }
+}

@@ -1,0 +1,31 @@
+
+*{
+    margin:0px;
+    padding: 0px;
+    outline: none!important;
+    box-sizing: border-box!important;
+        
+}
+
+body{
+
+    position: relative;
+    overflow-x: hidden!important;
+       overflow-y: hidden; 
+    
+}
+    
+li{
+    list-style: none;
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+.clearfix{
+    clear: both;
+}
+    
+    
+    

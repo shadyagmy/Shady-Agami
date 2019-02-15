@@ -1,0 +1,46 @@
+.cert__popups{
+    .certifications__img-popup{
+        display: none;
+        img{
+            width: 100%;
+        }
+        &__close{
+            display: none;
+        }
+        &.active-img-cont{
+            position: fixed;
+            top: 53%;
+            left: 51%;
+            transform: translate(-50%, -50%);
+            width: 53vw;
+            height: auto;
+            z-index: 999999999;
+            margin: 0;
+            display: block;
+            @include respond(tab-port){
+                width: 76vw!important; 
+            }
+            @include respond(phone){
+                width: 90vw!important; 
+            }
+             .certifications__close{
+                position: absolute;
+                top:-1rem;
+                right: -2.5rem;
+                font-size: 3.5rem;
+                color: #1f2833;
+                z-index: 99999999;
+                display: block;
+                cursor: pointer;
+                i{
+                    color: $color-premier-dark;
+                }
+                @include respond(phone){
+                    top: -4rem;
+                    right: .5rem;
+                }
+                
+            }
+        }   
+    }
+}

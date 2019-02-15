@@ -1,0 +1,400 @@
+.about{
+    padding: 12rem 4rem 9rem;
+
+    &__text{
+        width: 85%;
+        margin: 0 auto;
+        text-align: center;
+        color: $color-gary-blue;
+
+        h2{
+            margin-bottom: 1rem;
+        }
+
+        h3{
+            margin-bottom: 4.5rem;
+            color: $color-premier;
+        }
+        p{
+            text-align: left;
+            column-count: 2;
+            column-rule: 1px solid $color-premier-light;
+            column-gap: 4rem;
+            @include respond(tab-port){
+                column-count: 1; 
+            }
+        }
+        
+    }
+}
+
+.skills{
+    padding: 10rem 3rem;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    background: $color-gary-2;
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    @include respond(phone){
+        padding: 12rem 1rem 11rem;
+
+        
+
+    }
+
+    &__cont{
+        width: 100%;
+        overflow: hidden;
+        perspective: 100rem;
+        &::after{
+            content: '';
+            clear: both;
+            display: table;
+        }
+    }
+
+    &__main{
+        float: left;
+        width: 75%;
+        text-align: center;
+        margin: 0rem auto;
+        padding: 2rem 1rem;
+        background:$color-gary-2;
+        @include respond(tab-port){
+            width: 100%;
+            padding: 1rem 0rem;
+            float: none;
+        }
+    }
+
+    &__bars{
+        margin: 2rem 0 3.5rem;
+
+    }
+
+    &__meter{
+        width: 100%;
+        @include clearFix;
+
+
+        
+    }
+
+    &__title{
+        width: 17%;
+        float: left;
+         color: $color-premier-dark;
+         font-weight: bold;
+         font-size: 1.5rem;
+         transition: all .4s cubic-bezier(0.215, 0.610, 0.355, 1);
+         padding-left: 2rem!important;
+         @include respond(tab-port){
+            padding-left: 0rem!important;
+         }
+
+        padding-left: 4rem;
+         &:hover{
+             transform: translate(-.4rem,-.4rem) scale(1.1);
+         }
+
+     }
+
+    &__bar{
+        width: 70%;
+        float: left;
+        background: $color-gary-2;
+        min-height: 1.2rem;
+        position: relative;
+        display: block;
+        margin: .5rem 1rem 0rem 1rem;
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        box-shadow: 0 .1rem .2rem rgba($color-dark,.1);
+        border: .4px solid #F64C72;
+        @include respond(phone){
+            margin: .5rem 1rem 0rem 2.5rem;
+        }
+
+        span{
+            &.number{
+                position: absolute;
+                right: 0rem;
+                top: -2.3rem;
+                font-weight: 700;
+                color: $color-premier-dark;
+                font-size: 1.6rem;
+                transition: all .4s cubic-bezier(0.215, 0.610, 0.355, 1);
+                font-style: italic;
+            }
+        }
+        
+    }
+    &__inner{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 10%;
+        min-height: 100%;
+        background: $color-pink;
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+       
+    }
+
+    &__image{
+        width: 25%;
+        float: left;
+        margin-top: 9rem;
+        transition: all .3s;
+
+        &:hover{
+            transform: scale(1.1) rotateY(-15deg);
+        }
+
+        @include respond(tab-port){
+            width: 36%;
+            float: none;
+            margin-top: 9rem;
+            perspective: 100rem;
+            margin: 3rem auto 0;
+            opacity: .8;
+            &:hover{
+                transform: scale(1.08) rotateY(0deg);
+                opacity: 1;
+            }
+        }
+
+        img{
+            width: 100%;   
+        }
+    }
+}
+
+//services
+.services{
+    padding: 8rem 1rem 16rem;
+    text-align: center;
+
+    @include respond(tab-port){
+        padding: 8rem 1rem 7rem;
+    }
+
+    &__icon{
+        font-size: 7rem;
+        color: $color-pink-grey;
+    }
+
+    &__head3{
+        color: $color-gary-blue;
+        font-size: 2rem;
+        margin: 2rem 0 1rem;
+    }
+    
+    &__p{
+        font-size: 1.7rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+// EDUCATION SECTION
+
+.education{
+    padding: 8rem 5rem 5rem;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto 4rem;
+    overflow: hidden;
+    @include respond(phone){
+        padding: 2rem 1rem 2rem;
+    }
+    .certifications{
+        &__header{
+            color: $color-gary-blue;
+        }
+       
+        &__container{
+            display: flex;
+            justify-content: space-between;
+            transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+            width: 300%;
+            @include respond(phone){
+                width: 600%;
+            }
+
+            &.translate_1{
+                transform: translateX(-33.3333%);
+                @include respond(phone){
+                    transform: translateX(-16.5%);
+                }
+            }
+            
+            &.translate_2{
+                transform: translateX(-66.6666%);
+                @include respond(phone){
+                    transform: translateX(-33%);
+                }
+            }
+
+            &.translate_3{
+                @include respond(phone){
+                    transform: translateX(-50%);
+                }
+            }
+
+            &.translate_4{
+                @include respond(phone){
+                    transform: translateX(-66.5%);
+                }
+            }
+
+            &.translate_5{
+                @include respond(phone){
+                    transform: translateX(-83%);
+                }
+            }
+        }
+
+        &__img-cont{
+            width: 16.5%;
+            height: 16.5%;
+            margin-right: 4.25%;
+            margin-left: 4.25%;
+            transition: all .6s cubic-bezier(0.075, 0.82, 0.165, 1);
+            cursor: pointer;
+            display: inline;
+            border: 3px solid $color-pink;
+            border-radius: .5rem;
+            overflow: hidden;
+            padding: .5rem;
+            
+        }
+        &__img{
+            width: 100%;
+            height: 100%;
+            transition: all .6s cubic-bezier(0.075, 0.82, 0.165, 1);   
+        }
+
+        &__toggle{
+            margin: 3rem auto;
+            width: 100%;
+        }
+
+        &__toggle-list{
+            display: inline-block;
+            color: #fff;
+            padding: 0px 1rem;
+            @include respond(phone){
+                padding: 0px 1.3rem;
+            }
+            &.show-phone{
+                display: none;
+                @include respond(phone){
+                    display: inline-block;
+                }
+            }
+        }
+
+        &__toggle-bullet{
+            width: 1.3rem;
+            height: 1.3rem;
+            border-radius: 50%;
+            border: 2px solid $color-pink;
+            background: transparent;
+            display: inline-block;
+            transition: all .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+            cursor: pointer;
+            @include respond(phone){
+                width: 1.8rem;
+                height: 1.8rem; 
+            }
+            &:hover,
+            &.active{
+                background :$color-pink;
+            }
+        }
+
+    }
+   
+}
+
+
+
+//PROJECTS SECTION
+.projects{
+    padding: 10rem 5rem;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+
+    &__para{
+        font-size: 1.8rem;
+        font-style: italic;
+        margin-top: 1rem;
+    }
+
+    .row{
+        padding: 3rem 0 0;
+        h4{
+            font-size: 22px;
+            margin-top: 2rem;
+            color: $color-gary-blue;
+        }
+    }
+
+    .project{
+        height: 17rem;
+        width: 100%;
+        position: relative;
+        z-index: 15;
+        overflow: hidden;
+
+        &:hover img{
+           transform: scale(1.2);
+        }
+
+        
+        img{
+            height: 100%;
+            width: 100%;
+            cursor: pointer;
+            z-index: 20;
+            display: block;
+            transition: all .4s ease-in-out;
+        }
+        &__overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba($color-pink,.7);
+            opacity: 0;
+            transition: all .3s;
+            z-index: 30;
+
+            &:hover{
+                opacity: 1; 
+            }
+
+            a{
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+            i{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                display: block;
+                color: $color-white;
+                font-size: 40px;
+            }
+        }
+    }
+    
+}
+
