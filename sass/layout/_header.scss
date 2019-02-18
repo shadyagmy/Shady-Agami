@@ -1,9 +1,7 @@
 
-
-
 .header{
     position: relative;
-   
+    height: 625px;
     background-image: linear-gradient(to right bottom,rgba($color-premier-dark,.9),
                         rgba($color-premier-light,.7));
     background-attachment: fixed;
@@ -20,9 +18,14 @@
         text-align: center;
         color:#eee;
         width: 80%;
+        backface-visibility: hidden;
+        perspective: 800px;
 
-        &-h3{
-            color:inherit
+        h3{
+            color:inherit;
+            
         }
+
+        
     }
 }

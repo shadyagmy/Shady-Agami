@@ -1,5 +1,5 @@
 .btn{
-    
+
     padding: 1.7rem 3.7rem;
     border: none;
     border-radius: .5rem;
@@ -19,6 +19,7 @@
         box-shadow: 0 3rem 5rem rgba($color-dark,.4);
         transform: translateY(-.5rem);
     }
+    
     &--blue{
         background: $color-pink;
         color: $color-white;

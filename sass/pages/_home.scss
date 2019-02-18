@@ -1,5 +1,5 @@
 .about{
-    padding: 12rem 4rem 9rem;
+    padding: 13rem 4rem;
 
     &__text{
         width: 85%;
@@ -173,7 +173,7 @@
 
 //services
 .services{
-    padding: 8rem 1rem 16rem;
+    padding:11rem 1rem 16rem;
     text-align: center;
 
     @include respond(tab-port){
@@ -201,7 +201,7 @@
 // EDUCATION SECTION
 
 .education{
-    padding: 8rem 5rem 5rem;
+    padding: 10rem;
     text-align: center;
     width: 100%;
     margin: 0 auto 4rem;

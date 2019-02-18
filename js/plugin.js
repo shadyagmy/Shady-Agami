@@ -1,4 +1,5 @@
 
+
 $(document).ready(function () {
 
 
@@ -101,17 +102,17 @@ var skillsSection = document.getElementById('skills');
 var meterInner = document.querySelectorAll(".skills__inner");
 var progressNumber = document.querySelectorAll('.skills span.number');
 var skillsSectionOffsetTop = skillsSection.offsetTop;
-var progressNumberWidths = [90,95,80,70,80,40,85,75,70];
+var progressNumberWidths = [90,95,90,70,80,85,85,40,70];
 var moveTimers = [];
 var width = 0;
 window.addEventListener("scroll", progressNumberAdd);
 window.addEventListener("touchmove", progressNumberAdd);
-
+progressNumberAdd()
 
 
 
 function progressNumberAdd(){
-    if (window.pageYOffset > (skillsSectionOffsetTop - 10)){
+    if (window.pageYOffset > (skillsSectionOffsetTop - 200)){
         window.removeEventListener("scroll", progressNumberAdd);
         window.removeEventListener("touchmove", progressNumberAdd);
         
@@ -133,7 +134,7 @@ function numberAddCheker(i){
     if(width >= progressNumberWidths[i]){
         clearInterval(moveTimers[i])
     }else{
-        width = width+.05;
+        width = width+.02;
         meterInner[i].style.width = width + "%";
         progressNumber[i].textContent = Math.round(width * 1) + "%" ;
     }
@@ -199,26 +200,33 @@ certificationsCont.ontouchmove = function(){
 var certImg = document.querySelectorAll('.certifications__img');
 var certificationsImgPopup = document.querySelectorAll('.certifications__img-popup');
 var certClose = document.querySelectorAll('.certifications__close');
+var bodydivsExCertImgPopup = document.querySelectorAll('body > *:not(.cert__popups)')
 
 for (let i = 0; i < certImg.length; i++){
     certImg[i].onclick = function(){
         for (let x = 0; x < certImg.length; x++ ){
-            certificationsImgPopup[x].classList.remove('active-img-cont');
+            certificationsImgPopup[x].classList.remove('active-img-cont');    
         }
-        certificationsImgPopup[i].classList.add('active-img-cont'); 
+        certificationsImgPopup[i].classList.add('active-img-cont');
+       
+        for (let i =0; i<bodydivsExCertImgPopup.length;i++){
+            bodydivsExCertImgPopup[i].style.filter = 'blur(7px)';
+            bodydivsExCertImgPopup[i].style.transition = "-webkit-filter .3s linear";
+        }
     }
-    close(i);   
+    close(i);
 }
-
-
 
 function close(i){
     certClose[i].onclick = function(){
-        certificationsImgPopup[i].classList.remove('active-img-cont'); 
-    }     
+        certificationsImgPopup[i].classList.remove('active-img-cont');
+        for (let i =0; i<bodydivsExCertImgPopup.length;i++){
+            bodydivsExCertImgPopup[i].style.filter = 'blur(0)';
+        }
+    }  
 }
 
+
+
 });
-
-
 
