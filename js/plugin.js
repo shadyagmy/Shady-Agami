@@ -146,9 +146,13 @@ function numberAddCheker(i){
 //Hide scroll when i click on projects link
 
 var links = document.querySelectorAll('.projects .project a');
+var nav = document.querySelector('.nav');
+
 for (let i = 0; i < links.length; i++){
     links[i].onclick = function(){
-        document.body.style.overflowY = 'hidden'  
+        document.body.style.overflowY = 'hidden';
+        nav.style.zIndex = "1";
+
     }
 }
 
@@ -156,6 +160,7 @@ var closedLinks = document.querySelectorAll('.project-describtion__close');
 for (let i = 0; i < closedLinks.length; i++){
     closedLinks[i].onclick = function(){
         document.body.style.overflowY = 'auto';
+        nav.style.zIndex = "9999";
     }
 }
 
@@ -163,6 +168,7 @@ var closedBtnLinks = document.querySelectorAll('.project-describtion__btnClose')
 for (let i = 0; i < closedBtnLinks.length; i++){
     closedBtnLinks[i].onclick = function(){
         document.body.style.overflowY = 'auto';
+        nav.style.zIndex = "9999";
     }
 }
 
@@ -170,7 +176,6 @@ for (let i = 0; i < closedBtnLinks.length; i++){
 
 
 // CERTIFICATION SLIDER
-
 var certificationsBullet = document.querySelectorAll('.certifications__toggle-bullet');
 var certificationsCont = document.querySelector('.certifications__container');
 
@@ -195,8 +200,9 @@ certificationsCont.ontouchmove = function(){
 }
 
 
-//popup any certification when click on it
 
+
+//popup any certification when click on it
 var certImg = document.querySelectorAll('.certifications__img');
 var certificationsImgPopup = document.querySelectorAll('.certifications__img-popup');
 var certClose = document.querySelectorAll('.certifications__close');
