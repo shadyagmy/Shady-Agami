@@ -597,15 +597,21 @@ i {
 
 .about {
   padding: 13rem 4rem; }
+  @media (max-width: 37.5em) {
+    .about {
+      padding: 12rem 2rem; } }
   .about__text {
     width: 85%;
     margin: 0 auto;
     text-align: center;
     color: #1f2833; }
+    @media (max-width: 37.5em) {
+      .about__text {
+        width: 100%; } }
     .about__text h2 {
       margin-bottom: 1rem; }
     .about__text h3 {
-      margin-bottom: 4.5rem;
+      margin-bottom: 3rem;
       color: #2F2FA1; }
     .about__text p {
       text-align: left;
@@ -614,7 +620,8 @@ i {
       column-gap: 4rem; }
       @media (max-width: 56.25em) {
         .about__text p {
-          column-count: 1; } }
+          column-count: 1;
+          text-align: center; } }
 
 .skills {
   padding: 10rem 3rem;
