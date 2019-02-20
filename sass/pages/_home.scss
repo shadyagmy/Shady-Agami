@@ -21,14 +21,7 @@
             color: $color-premier;
         }
         p{
-            text-align: left;
-            column-count: 2;
-            column-rule: 1px solid $color-premier-light;
-            column-gap: 4rem;
-            @include respond(tab-port){
-                column-count: 1;
-                text-align: center;
-            }
+            text-align: center;
         }
         
     }
@@ -224,39 +217,39 @@
             display: flex;
             justify-content: space-between;
             transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-            width: 300%;
-            @include respond(phone){
+            width: 303%;
+            @include respond(tab-port){
                 width: 600%;
             }
 
             &.translate_1{
                 transform: translateX(-33.3333%);
-                @include respond(phone){
+                @include respond(tab-port){
                     transform: translateX(-16.5%);
                 }
             }
             
             &.translate_2{
                 transform: translateX(-66.6666%);
-                @include respond(phone){
+                @include respond(tab-port){
                     transform: translateX(-33%);
                 }
             }
 
             &.translate_3{
-                @include respond(phone){
+                @include respond(tab-port){
                     transform: translateX(-50%);
                 }
             }
 
             &.translate_4{
-                @include respond(phone){
+                @include respond(tab-port){
                     transform: translateX(-66.5%);
                 }
             }
 
             &.translate_5{
-                @include respond(phone){
+                @include respond(tab-port){
                     transform: translateX(-83%);
                 }
             }
@@ -296,7 +289,7 @@
             }
             &.show-phone{
                 display: none;
-                @include respond(phone){
+                @include respond(tab-port){
                     display: inline-block;
                 }
             }

@@ -134,7 +134,7 @@ function numberAddCheker(i){
     if(width >= progressNumberWidths[i]){
         clearInterval(moveTimers[i])
     }else{
-        width = width+.02;
+        width = width+.05;
         meterInner[i].style.width = width + "%";
         progressNumber[i].textContent = Math.round(width * 1) + "%" ;
     }
@@ -182,6 +182,7 @@ var certificationsCont = document.querySelector('.certifications__container');
 function certSlider(){
     for (let i = 0; i < certificationsBullet.length; i++){
         certificationsBullet[i].onclick = function(){
+            console.log(certificationsBullet.length)
             certificationsCont.classList = '';
             certificationsCont.classList.add('certifications__container');
             certificationsCont.classList.add('translate_'+i);
@@ -189,15 +190,12 @@ function certSlider(){
                 certificationsBullet[n].classList.remove('active');
                 certificationsBullet[i].classList.add('active');
             }
-    
         }
     }
 }
 certSlider();
 
-certificationsCont.ontouchmove = function(){
 
-}
 
 
 

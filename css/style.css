@@ -475,7 +475,7 @@ i {
     -o-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1); }
     .nav__list.open {
-      height: 33rem;
+      height: 26rem;
       padding: 2rem 0 0 3rem !important; }
     .nav__list__link {
       color: #1f2833 !important;
@@ -614,14 +614,7 @@ i {
       margin-bottom: 3rem;
       color: #2F2FA1; }
     .about__text p {
-      text-align: left;
-      column-count: 2;
-      column-rule: 1px solid #4040b2;
-      column-gap: 4rem; }
-      @media (max-width: 56.25em) {
-        .about__text p {
-          column-count: 1;
-          text-align: center; } }
+      text-align: center; }
 
 .skills {
   padding: 10rem 3rem;
@@ -763,27 +756,27 @@ i {
     display: flex;
     justify-content: space-between;
     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    width: 300%; }
-    @media (max-width: 37.5em) {
+    width: 303%; }
+    @media (max-width: 56.25em) {
       .education .certifications__container {
         width: 600%; } }
     .education .certifications__container.translate_1 {
       transform: translateX(-33.3333%); }
-      @media (max-width: 37.5em) {
+      @media (max-width: 56.25em) {
         .education .certifications__container.translate_1 {
           transform: translateX(-16.5%); } }
     .education .certifications__container.translate_2 {
       transform: translateX(-66.6666%); }
-      @media (max-width: 37.5em) {
+      @media (max-width: 56.25em) {
         .education .certifications__container.translate_2 {
           transform: translateX(-33%); } }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .education .certifications__container.translate_3 {
         transform: translateX(-50%); } }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .education .certifications__container.translate_4 {
         transform: translateX(-66.5%); } }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .education .certifications__container.translate_5 {
         transform: translateX(-83%); } }
   .education .certifications__img-cont {
@@ -814,7 +807,7 @@ i {
         padding: 0px 1.3rem; } }
     .education .certifications__toggle-list.show-phone {
       display: none; }
-      @media (max-width: 37.5em) {
+      @media (max-width: 56.25em) {
         .education .certifications__toggle-list.show-phone {
           display: inline-block; } }
   .education .certifications__toggle-bullet {
