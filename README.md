@@ -1,2 +1,0 @@
-# Shady-Agmy
-My portfolio 
