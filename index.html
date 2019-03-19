@@ -6,6 +6,7 @@
         <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
         <meta charset=utf-8>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/glide.core.min.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Muli:300,400,400i,600,700&amp;subset=latin-ext" rel="stylesheet">
@@ -127,15 +128,6 @@
                 </div>
                 <div class="skills__bars "  >
                     <div class="skills__meter">
-                        <h5 class="skills__title heading-third">React js</h5>
-                        <div class="skills__bar">
-                            <span class="skills__inner"></span>
-                            <span class="number"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skills__bars "  >
-                    <div class="skills__meter">
                         <h5 class="skills__title heading-third">git</h5>
                         <div class="skills__bar">
                             <span class="skills__inner"></span>
@@ -161,14 +153,56 @@
         <h2 class="heading-second wow fadeInDown" data-wow-duration="1s" >portfolio</h2>
         <p class="projects__para paragraph margin-bottom-mideum wow fadeInDown" data-wow-duration="1.5s">These are some of my projects</p>
 
-        <div class="row">
-            <div class="col_1of3">
+        <div class="projects__container">
+            
+            <div class="projects__projectCont ">
+                <div class="project  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0s">
+                    <img src="images/natour.png" alt="Natour project">
+                    <div class='project__overlay'><a href='#Project-Natour'><i class="fas fa-plus"></i></a></div>  
+                </div>  
+                <h4 class=" wow fadeInDown" data-wow-duration="1.4s" data-wow-delay="0s">Natour</h4>
+            </div>
+             <!-- PROJECT DESCRIPTION -->
+             <div id="Project-Natour" class="project-describtion">
+                <a class="project-describtion__close" href='#projects'><i class="fas fa-times"></i></a>
+                <h2 class="heading-second margin-bottom-mideum">Natour</h2>
+                <img src="images/natour.png"  alt="Natour project">
+                <p class="paragraph margin-top-small">Natour is a modern landing page i created it using Html, Css, css3 and sass<br>This landing page is fully responsive for all devices and compatible with all modern browsers.</p>
+                <div class="project-describtion__buttons margin-top-mideum">
+                    <div><a class="project-describtion__codeLink margin-top-small btn" href="https://github.com/shadyagmy/Natour" target="_blank"><i class="button_icons fab fa-github"></i> see code</a></div>
+                    <div><a class="project-describtion__link margin-top-small btn" href="https://shadyagmy.github.io/Natour/" target="_blank"><i class="button_icons fas fa-desktop"></i> see project</a></div>
+                    <a class="project-describtion__btnClose margin-top-mideum btn" href='#projects'><i class="far fa-times-circle button_icons"></i> close</a>
+                </div>
+            </div>
+
+            <div class="projects__projectCont" >
+                <div class="project wow fadeInDown" data-wow-duration="1s" data-wow-delay="0s">
+                    <img src="images/Nexter.png" alt="Nexter project">
+                    <div class='project__overlay'><a href='#Project-nexter'><i class="fas fa-plus"></i></a></div> 
+                </div>  
+                <h4 class=" wow fadeInDown" data-wow-duration="1.4s" data-wow-delay="0s">Nexter</h4>
+            </div> 
+            <!-- PROJECT DESCRIPTION -->
+            <div id="Project-nexter" class="project-describtion">
+                <a class="project-describtion__close" href='#projects'><i class="fas fa-times"></i></a>
+                <h2 class="heading-second margin-bottom-mideum">Nexter</h2>
+                <img src="images/Nexter.png" alt="Nexter project">
+                <p class="paragraph margin-top-small">Nexter is a modern website landing page was totally created with the CSS3 Grid property <br>Nexter is fully responsive for all devices and compatible with all browsers.</p>
+                <div class="project-describtion__buttons margin-top-mideum"> 
+                    <div><a class="project-describtion__codeLink margin-top-small btn" href="https://github.com/shadyagmy/Nexter" target="_blank"><i class="button_icons fab fa-github"></i> see code</a></div>
+                    <div><a class="project-describtion__link margin-top-small btn" href="https://shadyagmy.github.io/Nexter/" target="_blank"><i class="button_icons fas fa-desktop"></i>see project</a></div>
+                    <a class="project-describtion__btnClose margin-top-mideum btn" href='#projects'><i class="far fa-times-circle button_icons"></i> close</a>
+                </div>
+            </div>
+
+            <div class="projects__projectCont">
                 <div class="project wow fadeInDown" data-wow-duration="1s" data-wow-delay="0s">
                     <img src="images/your_website.png" alt="your website project">
                     <div class='project__overlay'><a href='#Project-Your-own-website'><i class="fas fa-plus"></i></a></div>  
                 </div>  
                 <h4 class=" wow fadeInDown" data-wow-duration="1s" data-wow-delay="0s">Your own website</h4>
             </div>
+            <!-- PROJECT DESCRIPTION -->
             <div id="Project-Your-own-website" class="project-describtion">
                 <a class="project-describtion__close" href='#projects'><i class="fas fa-times"></i></a>
                 <h2 class="heading-second margin-bottom-mideum">Your own website</h2>
@@ -181,133 +215,162 @@
                 </div>
             </div>
             
-            <div class="col_1of3 ">
-                <div class="project  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0s">
-                    <img src="images/natour.png" alt="Natour project">
-                    <div class='project__overlay'><a href='#Project-Natour'><i class="fas fa-plus"></i></a></div>  
-                </div>  
-                <h4 class=" wow fadeInDown" data-wow-duration="1.4s" data-wow-delay="0s">Natour</h4>
-                <div id="Project-Natour" class="project-describtion">
-                    <a class="project-describtion__close" href='#projects'><i class="fas fa-times"></i></a>
-                    <h2 class="heading-second margin-bottom-mideum">Natour</h2>
-                    <img src="images/natour.png"  alt="Natour project">
-                    <p class="paragraph margin-top-small">Natour is a modern landing page i created it using Html, Css, css3 and sass<br>This landing page is fully responsive for all devices and compatible with all modern browsers.</p>
-                    <div class="project-describtion__buttons margin-top-mideum">
-                        <div><a class="project-describtion__codeLink margin-top-small btn" href="https://github.com/shadyagmy/Natour" target="_blank"><i class="button_icons fab fa-github"></i> see code</a></div>
-                        <div><a class="project-describtion__link margin-top-small btn" href="https://shadyagmy.github.io/Natour/" target="_blank"><i class="button_icons fas fa-desktop"></i> see project</a></div>
-                        <a class="project-describtion__btnClose margin-top-mideum btn" href='#projects'><i class="far fa-times-circle button_icons"></i> close</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col_1of3 ">
+            <div class="projects__projectCont">
                 <div class="project  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0s">
                     <img src="images/trillo.png" alt="Trillo project">
                     <div class='project__overlay'><a href='#Project-trillo'><i class="fas fa-plus"></i></a></div>  
                 </div>  
                 <h4 class=" wow fadeInDown" data-wow-duration="1.4s" data-wow-delay="0s">Trillo</h4>
-                <div id="Project-trillo" class="project-describtion">
-                    <a class="project-describtion__close" href='#projects'><i class="fas fa-times"></i></a>
-                    <h2 class="heading-second margin-bottom-mideum">Trillo</h2>
-                    <img src="images/trillo.png" alt="Trillo project">
-                    <p class="paragraph margin-top-small">Trillo is a modern web application page was totally structured with the CSS3 flex box property <br>Trillo is fully responsive for all devices and compatible with all browsers.</p>
-                    <div class="project-describtion__buttons margin-top-mideum">
-                        <div><a class="project-describtion__codeLink margin-top-small btn" href="https://github.com/shadyagmy/Trillo-" target="_blank"><i class="button_icons fab fa-github"></i> see code</a></div>
-                        <div><a class="project-describtion__link margin-top-small btn" href="https://shadyagmy.github.io/Trillo-/" target="_blank"><i class="button_icons fas fa-desktop"></i>see project</a></div>
-                        <a class="project-describtion__btnClose margin-top-mideum btn" href='#projects'> <i class="far fa-times-circle button_icons"></i>close</a>
-                    </div>
+            </div>  
+            <!-- PROJECT DESCRIPTION -->
+            <div id="Project-trillo" class="project-describtion">
+                <a class="project-describtion__close" href='#projects'><i class="fas fa-times"></i></a>
+                <h2 class="heading-second margin-bottom-mideum">Trillo</h2>
+                <img src="images/trillo.png" alt="Trillo project">
+                <p class="paragraph margin-top-small">Trillo is a modern web application page was totally structured with the CSS3 flex box property <br>Trillo is fully responsive for all devices and compatible with all browsers.</p>
+                <div class="project-describtion__buttons margin-top-mideum">
+                    <div><a class="project-describtion__codeLink margin-top-small btn" href="https://github.com/shadyagmy/Trillo-" target="_blank"><i class="button_icons fab fa-github"></i> see code</a></div>
+                    <div><a class="project-describtion__link margin-top-small btn" href="https://shadyagmy.github.io/Trillo-/" target="_blank"><i class="button_icons fas fa-desktop"></i>see project</a></div>
+                    <a class="project-describtion__btnClose margin-top-mideum btn" href='#projects'> <i class="far fa-times-circle button_icons"></i>close</a>
                 </div>
-            </div>   
-        </div>
-        
-        <div class="row">
-            <div class="col_1of3 ">
+            </div>
+
+            <div class="projects__projectCont ">
                 <div class="project wow fadeInDown" data-wow-duration="1s" data-wow-delay="0s">
                     <img src="images/conrad.png" alt="Conrad project">
                     <div class='project__overlay'><a href='#Project-Conrad'><i class="fas fa-plus"></i></a></div>  
                 </div>  
                 <h4 class=" wow fadeInDown" data-wow-duration="1.4s" data-wow-delay="0s">Conrad</h4>
-                <div id="Project-Conrad" class="project-describtion">
-                    <a class="project-describtion__close" href='#projects'><i class="fas fa-times"></i></a>
-                    <h2 class="heading-second margin-bottom-mideum">Tanatos</h2>
-                    <img src="images/conrad.png" alt="Conrad project">
-                    <p class="paragraph margin-top-small">Conrad is a simple landing page i created it using Html, Css and Javascript<br>This landing page is fully responsive for all devices and compatible with all modern browsers.</p>
-                    <div class="project-describtion__buttons margin-top-mideum"> 
-                        <div><a class="project-describtion__codeLink margin-top-small btn" href="https://github.com/shadyagmy/Conrad" target="_blank"><i class="button_icons fab fa-github"></i> see code</a></div>
-                        <div><a class="project-describtion__link margin-top-small btn" href="https://shadyagmy.github.io/Conrad/" target="_blank"><i class="button_icons fas fa-desktop"></i>see project</a></div>
-                        <a class="project-describtion__btnClose margin-top-mideum btn" href='#projects'> <i class="far fa-times-circle button_icons"></i>close</a>
-                    </div>
+            </div>
+             <!-- PROJECT DESCRIPTION -->
+             <div id="Project-Conrad" class="project-describtion">
+                <a class="project-describtion__close" href='#projects'><i class="fas fa-times"></i></a>
+                <h2 class="heading-second margin-bottom-mideum">Tanatos</h2>
+                <img src="images/conrad.png" alt="Conrad project">
+                <p class="paragraph margin-top-small">Conrad is a simple landing page i created it using Html, Css and Javascript<br>This landing page is fully responsive for all devices and compatible with all modern browsers.</p>
+                <div class="project-describtion__buttons margin-top-mideum"> 
+                    <div><a class="project-describtion__codeLink margin-top-small btn" href="https://github.com/shadyagmy/Conrad" target="_blank"><i class="button_icons fab fa-github"></i> see code</a></div>
+                    <div><a class="project-describtion__link margin-top-small btn" href="https://shadyagmy.github.io/Conrad/" target="_blank"><i class="button_icons fas fa-desktop"></i>see project</a></div>
+                    <a class="project-describtion__btnClose margin-top-mideum btn" href='#projects'> <i class="far fa-times-circle button_icons"></i>close</a>
                 </div>
             </div>
 
-            <div class="col_1of3 ">
+            <div class="projects__projectCont ">
                 <div class="project wow fadeInDown" data-wow-duration="1s" data-wow-delay="0s">
                     <img src="images/tinker.png" alt="Tinker project">
                     <div class='project__overlay'><a href='#Project-Tinker'><i class="fas fa-plus"></i></a></div>  
                 </div>  
                 <h4 class=" wow fadeInDown" data-wow-duration="1.4s" data-wow-delay="0s">Tinker</h4>
-                <div id="Project-Tinker" class="project-describtion">
-                    <a class="project-describtion__close" href='#projects'><i class="fas fa-times"></i></a>
-                    <h2 class="heading-second margin-bottom-mideum">Tinker</h2>
-                    <img src="images/tinker.png" alt="Tinker project">
-                    <p class="paragraph margin-top-small">Tinker is a landing page i created it using Html, Css with some of js libraries<br>This landing page is fully responsive for all devices and compatible with all modern browsers.</p>
-                    <div class="project-describtion__buttons margin-top-mideum"> 
-                        <div><a class="project-describtion__codeLink margin-top-small btn" href="https://github.com/shadyagmy/Tinker-web-site-page" target="_blank"><i class="button_icons fab fa-github"></i> see code</a></div>
-                        <div><a class="project-describtion__link margin-top-small btn" href="https://shadyagmy.github.io/Tinker-web-site-page/" target="_blank"><i class="button_icons fas fa-desktop"></i>see project</a></div>
-                        <a class="project-describtion__btnClose margin-top-mideum btn" href='#projects'><i class="far fa-times-circle button_icons"></i>close</a>
-                    </div>
-                </div>
             </div>   
+             <!-- PROJECT DESCRIPTION -->
+             <div id="Project-Tinker" class="project-describtion">
+                <a class="project-describtion__close" href='#projects'><i class="fas fa-times"></i></a>
+                <h2 class="heading-second margin-bottom-mideum">Tinker</h2>
+                <img src="images/tinker.png" alt="Tinker project">
+                <p class="paragraph margin-top-small">Tinker is a landing page i created it using Html, Css with some of js libraries<br>This landing page is fully responsive for all devices and compatible with all modern browsers.</p>
+                <div class="project-describtion__buttons margin-top-mideum"> 
+                    <div><a class="project-describtion__codeLink margin-top-small btn" href="https://github.com/shadyagmy/Tinker-web-site-page" target="_blank"><i class="button_icons fab fa-github"></i> see code</a></div>
+                    <div><a class="project-describtion__link margin-top-small btn" href="https://shadyagmy.github.io/Tinker-web-site-page/" target="_blank"><i class="button_icons fas fa-desktop"></i>see project</a></div>
+                    <a class="project-describtion__btnClose margin-top-mideum btn" href='#projects'><i class="far fa-times-circle button_icons"></i>close</a>
+                </div>
+            </div>
 
-            <div class="col_1of3" >
+            <div class="projects__projectCont" >
                 <div class="project wow fadeInDown" data-wow-duration="1s" data-wow-delay="0s">
                     <img src="images/developer.png" alt="Developer project">
                     <div class='project__overlay'><a href='#Project-Developer'><i class="fas fa-plus"></i></a></div> 
                 </div>  
                 <h4 class=" wow fadeInDown" data-wow-duration="1.4s" data-wow-delay="0s">Developer</h4>
-                <div id="Project-Developer" class="project-describtion">
-                    <a class="project-describtion__close" href='#projects'><i class="fas fa-times"></i></a>
-                    <h2 class="heading-second margin-bottom-mideum">Developer</h2>
-                    <img src="images/developer.png" alt="Developer project">
-                    <p class="paragraph margin-top-small">Developer is a small website consists of 3 pages one landing page and 2 other pages.I created it using Html, Css, Bootstrap 3, jquery and animated it with Wow js library<br>This website is fully responsive for all devices and compatible with all modern browsers.</p>
-                    <div class="project-describtion__buttons margin-top-mideum"> 
-                        <div><a class="project-describtion__codeLink margin-top-small btn" href="https://github.com/shadyagmy/Developer-Inc-" target="_blank"><i class="button_icons fab fa-github"></i> see code</a></div>
-                        <div><a class="project-describtion__link margin-top-small btn" href="https://shadyagmy.github.io/Developer-Inc-/" target="_blank"><i class="button_icons fas fa-desktop"></i>see project</a></div>
-                        <a class="project-describtion__btnClose margin-top-mideum btn" href='#projects'><i class="far fa-times-circle button_icons"></i> close</a>
-                    </div>
+            </div>
+             <!-- PROJECT DESCRIPTION -->
+             <div id="Project-Developer" class="project-describtion">
+                <a class="project-describtion__close" href='#projects'><i class="fas fa-times"></i></a>
+                <h2 class="heading-second margin-bottom-mideum">Developer</h2>
+                <img src="images/developer.png" alt="Developer project">
+                <p class="paragraph margin-top-small">Developer is a small website consists of 3 pages one landing page and 2 other pages.I created it using Html, Css, Bootstrap 3, jquery and animated it with Wow js library<br>This website is fully responsive for all devices and compatible with all modern browsers.</p>
+                <div class="project-describtion__buttons margin-top-mideum"> 
+                    <div><a class="project-describtion__codeLink margin-top-small btn" href="https://github.com/shadyagmy/Developer-Inc-" target="_blank"><i class="button_icons fab fa-github"></i> see code</a></div>
+                    <div><a class="project-describtion__link margin-top-small btn" href="https://shadyagmy.github.io/Developer-Inc-/" target="_blank"><i class="button_icons fas fa-desktop"></i>see project</a></div>
+                    <a class="project-describtion__btnClose margin-top-mideum btn" href='#projects'><i class="far fa-times-circle button_icons"></i> close</a>
                 </div>
-            </div>   
+            </div>
+  
 
         </div>
     </div>
         
     <!-- EDUCATION -->
-    <!-- <div id="blured__cont"></div> -->
     <div class="education">
-        <div id="certifications" class="certifications">
-            <h3 class="heading-third margin-bottom-large certifications__header wow fadeInDown" data-wow-duration="1s" data-wow-delay=".2s">certifications</h3>
-            <div class="certifications__container wow fadeInDown" data-wow-duration="1s" data-wow-delay=".1s">
-                <div class="certifications__img-cont "> <img class="certifications__img" src="images/c5.jpg" alt="certification"></div>
-                <div class="certifications__img-cont ">  <img class="certifications__img" src="images/c6.jpg" alt="certification"></div>
-                <div class="certifications__img-cont ">  <img class="certifications__img" src="images/c4.png" alt="certification"></div>    
-                <div class="certifications__img-cont"><img class="certifications__img" src="images/c1.jpg" alt="certification"></div> 
-                <div class="certifications__img-cont "> <img class="certifications__img" src="images/c2.jpg" alt="certification"></div>
-                <div class="certifications__img-cont ">  <img class="certifications__img" src="images/c3.jpg" alt="certification"></div>
-                
-            </div>
-            <div class="certifications__toggle wow bounceInUp" data-wow-duration="1s" data-wow-delay=".3s">
-                <ul >
-                    <li class="certifications__toggle-list"><a class="certifications__toggle-bullet active" ></a></li>
-                    <li class="certifications__toggle-list"><a class="certifications__toggle-bullet" ></a></li>
-                    <li class="certifications__toggle-list"><a class="certifications__toggle-bullet" ></a></li>
-                    <li class="certifications__toggle-list show-phone"><a class="certifications__toggle-bullet" ></a></li>
-                    <li class="certifications__toggle-list show-phone"><a class="certifications__toggle-bullet" ></a></li>
-                    <li class="certifications__toggle-list show-phone"><a class="certifications__toggle-bullet" ></a></li>    
+        <h3 class="heading-third margin-bottom-large certifications__header wow fadeInDown" data-wow-duration="1s" data-wow-delay=".2s">certifications</h3>
+
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <div class="certifications__img-cont ">
+                            <img class="certifications__img" src="images/c5.jpg" alt="certification">
+                            <p class="certifications__p">Intro to programming Nanodegree program</p>
+                            <h4 class="heading-4">At Udacity </h4>
+                        </div> 
+                    </li>
+                    <li class="glide__slide">
+                        <div class="certifications__img-cont ">
+                            <img class="certifications__img" src="images/c6.jpg" alt="certification">
+                            <p class="certifications__p">One Million Arab Coders program(Front End Developer Track)</p>
+                            <h4 class="heading-4">At Udacity </h4>
+                        </div> 
+                    </li>
+                    <li class="glide__slide">
+                        <div class="certifications__img-cont ">
+                            <img class="certifications__img certifications__img--fcc " src="images/c4.png" alt="certification">
+                            <p class="certifications__p">Responsive web design</p>
+                            <h4 class="heading-4">At FreeCodeCamp </h4>
+                        </div> 
+                    </li>
+                    <li class="glide__slide">
+                        <div class="certifications__img-cont ">
+                            <img class="certifications__img" src="images/c1.jpg" alt="certification">
+                            <p class="certifications__p">Css fundamentals course</p>
+                            <h4 class="heading-4">At SoloLearn</h4>
+                        </div> 
+                    </li>
+                    <li class="glide__slide">
+                        <div class="certifications__img-cont ">
+                            <img class="certifications__img" src="images/c2.jpg" alt="certification">
+                            <p class="certifications__p">Javascript tutorial course </p>
+                            <h4 class="heading-4">At SoloLearn </h4>
+                        </div> 
+                    </li>
+                    <li class="glide__slide">
+                        <div class="certifications__img-cont ">
+                            <img class="certifications__img" src="images/c3.jpg" alt="certification">
+                            <p class="certifications__p">Jquery tutorial course </p>
+                            <h4 class="heading-4">At SoloLearn </h4>
+                        </div> 
+                    </li>    
                 </ul>
             </div>
-        </div>       
+
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">&lsaquo;</button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">&rsaquo;</button>
+            </div>
+
+            <div class="glide__bullets" data-glide-el="controls[nav]">
+                <button class="glide__bullet" data-glide-dir="=0"></button>
+                <button class="glide__bullet" data-glide-dir="=1"></button>
+                <button class="glide__bullet" data-glide-dir="=2"></button>
+                <button class="glide__bullet" data-glide-dir="=3"></button>
+                <button class="glide__bullet" data-glide-dir="=4"></button>
+                <button class="glide__bullet" data-glide-dir="=5"></button>
+            </div>    
+        </div>
+
     </div>
+
     
+   
+
     <!-- CERTIFICATION POPUP -->
     <div class="cert__popups">
         <div class="certifications__img-popup "> <img  src="images/c5.jpg" alt="certification"><a class="certifications__close"><i class="fas fa-times"></i></a></div>
@@ -315,15 +378,11 @@
         <div class="certifications__img-popup ">  <img  src="images/c4.png" alt="certification"><a class="certifications__close"><i class="fas fa-times"></i></a></div>
         <div class="certifications__img-popup"><img src="images/c1.jpg" alt="certification"><a       class="certifications__close"><i class="fas fa-times"></i></a></div>
         <div class="certifications__img-popup "> <img src="images/c2.jpg" alt="certification"><a class="certifications__close"><i class="fas fa-times"></i></a></div>
-        <div class="certifications__img-popup ">  <img  src="images/c3.jpg" alt="certification"><a class="certifications__close"><i class="fas fa-times"></i></a></div>
-        
-        
+        <div class="certifications__img-popup ">  <img  src="images/c3.jpg" alt="certification"><a class="certifications__close"><i class="fas fa-times"></i></a></div>   
     </div>
 
 
-       
-
-
+    
     <!-- footer -->
     <footer id="footer" class="footer margin-top-large wow fadeInLeft" data-wow-duration="1.3s" data-wow-delay=".5s">
         <h3 class="heading-third ">Let's Connect</h3>
@@ -345,6 +404,7 @@
         </div>     
     </footer>
 
+
     <!-- spinner for perload -->
    <div class="preload">
         <div class="spinner">
@@ -355,12 +415,46 @@
         
 
     
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugin.js"></script>   
     
-    <script src="js/wow.min.js"></script>
+    <script src="js/plugin.js"></script>   
+
     <script>
-    new WOW().init();
+        function checkMedia() {
+            console.log("checking");
+            if (window.matchMedia("(min-width: 900px)").matches) {
+                var x = null;
+                 x = new Glide('.glide', {
+                type: 'slider',
+                startAt: 0,
+                perView: 2,
+                gap : "10px",
+                autoplay : 3500
+             
+                }).mount();
+
+            } else {
+                var x = null;
+                x = new Glide('.glide', {
+                type: 'slider',
+                startAt: 0,
+                perView: 1,
+                gap : "10px",
+                autoplay : 3500
+             
+                }).mount();
+
+            }
+        }
+        checkMedia();
+       
+        
+       
+      </script>
+    
+   
+    <script>
+        new WOW().init();
     </script>
+
     </body>
 </html>
