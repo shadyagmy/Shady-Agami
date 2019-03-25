@@ -88,7 +88,7 @@ window.onscroll = function(){
 
 
 
-// OPEN AND CLOSE MENU WHEN I CLICK ON MENU BAR!
+// Toggle MENU WHEN CLICK ON MENU BAR!
 var menuBar = document.querySelector('.menu_bars i');
 var menu = document.querySelector('.nav ul');
 
@@ -110,38 +110,41 @@ function menuBarToggleActiveClass (){
 
 
 // My SKILLS PROGRESS BAR ANIMATION
+
+
 var skillsSection = document.getElementById('skills');
 var meterInner = document.querySelectorAll(".skills__inner");
 var progressNumber = document.querySelectorAll('.skills span.number');
 var skillsSectionOffsetTop = skillsSection.offsetTop;
 var progressNumberWidths = [90,95,90,70,80,85,85,70];
-var moveTimers = [];
-var width = 0;
-window.addEventListener("scroll", progressNumberAdd);
-window.addEventListener("touchmove", progressNumberAdd);
-progressNumberAdd()
 
+var width = 0;
 
 
 function progressNumberAdd(){
+    // Run on scroll!
     if (window.pageYOffset > (skillsSectionOffsetTop - 200)){
+        //remove event listner for progressNumberAdd
         window.removeEventListener("scroll", progressNumberAdd);
-        window.removeEventListener("touchmove", progressNumberAdd);
-        
+        window.removeEventListener("touchmove", progressNumberAdd); 
+        // run init progressbar function!
         initProgressBar();
     }
 }
 
+//loop by meterinners divs length to take the i for each bar  
 function initProgressBar(){
-  for(var i = 0; i < meterInner.length; i++){
+  for(let i = 0; i < meterInner.length; i++){
     x(i);     
   }  	
 }
 
+var moveTimers = [];
 function x(i){
     moveTimers[i] = setInterval(numberAddCheker, 5, i);
 }
 
+// 
 function numberAddCheker(i){
     if(width >= progressNumberWidths[i]){
         clearInterval(moveTimers[i])
@@ -153,6 +156,12 @@ function numberAddCheker(i){
 } 
 
 
+
+
+// ON Window Scroll run progress number add function
+window.addEventListener("scroll", progressNumberAdd);
+window.addEventListener("touchmove", progressNumberAdd);
+progressNumberAdd()
 
 
 //Hide scroll when i click on projects link
