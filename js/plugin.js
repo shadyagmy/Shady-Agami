@@ -68,24 +68,62 @@ $('.header__text button').on("click", function () {
 });
 
 
+////////////////// NAVBAR FUNCTIONALITY /////////////////// NAVBAR FUNCTIONALITY //////////////////////
 
-// MAKE NAVBAR colored ON SCROLL and in smaller screen sizes
+// MAKE NAVBAR colored in smaller screen sizes
 var coloredNav = function(){
     var nav = document.querySelector('.nav');
-    if(window.scrollY > 150 || window.matchMedia("(max-width: 900px)").matches){
+    if( window.matchMedia("(max-width: 900px)").matches){
         nav.classList.add('colored');
-    }  else{
-        nav.classList.remove('colored')
+        nav.style.display = "flex";  
+    } else {
+        nav.classList.remove('colored');
     }
 }
+window.addEventListener('resize', function(){
+    coloredNav();  
+})
+
 coloredNav();
+
+
+// TOGGLE THE NAVBAR ON SCROLLING UP AND DOWN
+toggleNav()
 window.onresize = function(){
-    coloredNav(); 
+    toggleNav(); 
 }
-window.onscroll = function(){
-    coloredNav(); 
+function toggleNav() {
+    var nav = document.querySelector('.nav');
+    let lastScroll;
+    
+    window.addEventListener("scroll", () => {
+         if (window.scrollY < 150) {
+             // IN larger widths > 901px
+             if (window.matchMedia("(min-width: 901px)").matches) {
+                nav.classList.remove('colored');
+                nav.style.display = "flex";
+             }
+
+             coloredNav(); // check if width  < 900px to make the initial state of te nav colored
+
+        //if window.scroll > 150   
+        // on scroll up  
+        } else if (lastScroll > window.scrollY) {
+            if (nav.style.display == "none" || !nav.classList.contains('colored') ) {
+                nav.style.display = "flex";
+                nav.classList.add('colored');  
+            } 
+
+        // on scroll down 
+        }   else {
+            nav.style.display = "none";    
+        }
+
+        lastScroll = window.scrollY; //store last scroll to compare it with live scroll 
+    })
 }
 
+////////////////// NAVBAR FUNCTIONALITY /////////////////// NAVBAR FUNCTIONALITY //////////////////////
 
 
 // Toggle MENU WHEN CLICK ON MENU BAR!
@@ -93,7 +131,7 @@ var menuBar = document.querySelector('.menu_bars i');
 var menu = document.querySelector('.nav ul');
 
 menuBar.onclick = function(){
-    menuBarToggleActiveClass ()
+    menuBarToggleActiveClass()
 }
 
 
@@ -223,6 +261,16 @@ function close(i){
         }
     }  
 }
+
+
+
+
+
+
+
+
+
+
 
 });
 
