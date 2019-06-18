@@ -154,7 +154,7 @@ var skillsSection = document.getElementById('skills');
 var meterInner = document.querySelectorAll(".skills__inner");
 var progressNumber = document.querySelectorAll('.skills span.number');
 var skillsSectionOffsetTop = skillsSection.offsetTop;
-var progressNumberWidths = [90,95,90,70,80,85,85,70];
+var progressNumberWidths = [90,95,90,70,65,80,85,85,70];
 
 var width = 0;
 
