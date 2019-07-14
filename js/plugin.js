@@ -68,7 +68,7 @@ $('.header__text button').on("click", function () {
 });
 
 
-////////////////// NAVBAR FUNCTIONALITY /////////////////// NAVBAR FUNCTIONALITY //////////////////////
+////////////////// NAVBAR FUNCTIONALITY //////////////////
 
 // MAKE NAVBAR colored in smaller screen sizes
 var coloredNav = function(){
@@ -89,37 +89,46 @@ coloredNav();
 
 // TOGGLE THE NAVBAR ON SCROLLING UP AND DOWN
 toggleNav()
+
 window.onresize = function(){
     toggleNav(); 
 }
+
 function toggleNav() {
     var nav = document.querySelector('.nav');
     let lastScroll;
+
+    navBar();
+
+    function navBar() {
+        console.log('nav bar')
+        if (window.scrollY < 150) {
+            // IN larger widths > 901px
+            if (window.matchMedia("(min-width: 901px)").matches) {
+               nav.classList.remove('colored');
+               nav.style.display = "flex";
+            }
+            coloredNav(); // check if width  < 900px to make the initial state of te nav colored
+      
+       //if window.scroll > 150   
+       // on scroll up  
+       } else if (lastScroll > window.scrollY) {
+           if (nav.style.display == "none" || !nav.classList.contains('colored') ) {
+               nav.style.display = "flex";
+               nav.classList.add('colored');  
+           } 
+
+       // on scroll down 
+       }   else {
+           nav.style.display = "none";    
+       }
+
+       lastScroll = window.scrollY; //store last scroll to compare it with live scroll 
+    }
     
     window.addEventListener("scroll", () => {
-         if (window.scrollY < 150) {
-             // IN larger widths > 901px
-             if (window.matchMedia("(min-width: 901px)").matches) {
-                nav.classList.remove('colored');
-                nav.style.display = "flex";
-             }
-
-             coloredNav(); // check if width  < 900px to make the initial state of te nav colored
-
-        //if window.scroll > 150   
-        // on scroll up  
-        } else if (lastScroll > window.scrollY) {
-            if (nav.style.display == "none" || !nav.classList.contains('colored') ) {
-                nav.style.display = "flex";
-                nav.classList.add('colored');  
-            } 
-
-        // on scroll down 
-        }   else {
-            nav.style.display = "none";    
-        }
-
-        lastScroll = window.scrollY; //store last scroll to compare it with live scroll 
+        navBar()
+       
     })
 }
 
