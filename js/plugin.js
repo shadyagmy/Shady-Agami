@@ -3767,7 +3767,7 @@ $(document).ready(function () {
 // AFTER LOAD THE PAGE REMOVE PRELOADER
 // AFTER RELOAD THE PAGE CHECK THE URL FOR CONTAING #Project-
 $(".preload").fadeToggle(1000, () => {
-
+    bodyScroll();
 // on window refresh
  if (performance.navigation.type == 1){
     bodyScroll();
