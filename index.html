@@ -56,7 +56,7 @@
                 <h2 class="heading-second  wow slideInUp" data-wow-duration="1.3s">Hello, I'm SHADY AGAMY.</h2>
                 <h3 class="heading-third wow slideInUp" data-wow-duration="2s">Front End Web DEVELOPER</h3>
                 <p class="paragraph  wow slideInUp" data-wow-duration="2.4s">
-                    I'm a self-taught developer. Two years ago I started front end web development as a self-study course and learned some new technology skills. I strive to be a professional front end web developer through teamwork, and want to produce awesome real projects. I also value lifelong learning and continue to learn from eBooks and video courses from top teaching resources.</p>
+                    I'm a self-taught developer. Two years ago I started front end web development as a self-study course and learned some new technology skills. I strive to be a professional front end web developer, and want to produce awesome big projects. I also value lifelong learning and continue to learn from eBooks and video courses from top teaching resources.</p>
             </div>
     </div>
 
@@ -160,8 +160,6 @@
         </div>
     </div>
 
-
-
     <!-- PORTFOLIO -->
     <div id="projects" class="projects " >
         <h2 class="heading-second wow flipInX" data-wow-duration="1.3s" >portfolio</h2>
@@ -185,6 +183,26 @@
                 <div class="project-describtion__buttons margin-top-mideum">
                     <div><a class="project-describtion__link margin-top-small btn" href="https://shadyagmy.github.io/Natour/" target="_blank"><i class="button_icons fas fa-desktop"></i> see project</a></div>
                     <div><a class="project-describtion__codeLink margin-top-small btn" href="https://github.com/shadyagmy/Natour" target="_blank"><i class="button_icons fab fa-github"></i> see code</a></div>
+                    <a class="project-describtion__btnClose margin-top-mideum btn" href='#projects'><i class="far fa-times-circle button_icons"></i> close</a>
+                </div>
+            </div>
+
+            <div class="projects__projectCont wow zoomIn"  data-wow-duration="1.5s">
+                <div class="project  ">
+                    <img src="images/Ekuity.png" alt="Ekuity project">
+                    <div class='project__overlay'><a href='#Project-Ekuity'><i class="fas fa-plus"></i></a></div>  
+                </div>  
+                <h4>Ekuity</h4>
+            </div>
+             <!-- PROJECT DESCRIPTION -->
+             <div id="Project-Ekuity" class="project-describtion">
+                <a class="project-describtion__close" href='#projects'><i class="fas fa-times"></i></a>
+                <h2 class="heading-second margin-bottom-mideum">Ekuity</h2>
+                <img src="images/Ekuity.png" alt="Ekuity project">
+                <p class="paragraph margin-top-small">Ekuity is a modern demo landing page has alot of animation along the page i code it using Html, css3 and sass, Jquery<br>This landing page is fully responsive for all devices and compatible with all modern browsers.</p>
+                <div class="project-describtion__buttons margin-top-mideum">
+                    <div><a class="project-describtion__link margin-top-small btn" href="https://shadyagmy.github.io/Ekuity-LP/" target="_blank"><i class="button_icons fas fa-desktop"></i> see project</a></div>
+                    <div><a class="project-describtion__codeLink margin-top-small btn" href="https://github.com/shadyagmy/Ekuity-LP" target="_blank"><i class="button_icons fab fa-github"></i> see code</a></div>
                     <a class="project-describtion__btnClose margin-top-mideum btn" href='#projects'><i class="far fa-times-circle button_icons"></i> close</a>
                 </div>
             </div>
@@ -382,9 +400,6 @@
 
     </div>
 
-    
-   
-
     <!-- CERTIFICATION POPUP -->
     <div class="cert__popups">
         <div class="certifications__img-popup "> <img  src="images/c5.jpg" alt="certification"><a class="certifications__close"><i class="fas fa-times"></i></a></div>
@@ -396,10 +411,9 @@
     </div>
 
 
-    
     <!-- footer -->
-    <footer id="footer" class="footer margin-top-large wow slideInUp" data-wow-duration="2s">
-        <h3 class="heading-second ">Let's Connect</h3>
+    <footer id="footer" class="footer margin-top-large " >
+        <h3 class="heading-second  wow slideInUp" data-wow-duration="2s">Let's Connect</h3>
         <div class="footer__cont">
             <div class="footer__image">
                 <img src="images/contactUs.svg" alt="Contact us">
@@ -410,7 +424,7 @@
                     <li class="footer__li"><a href='https://codepen.io/shady-agmy/' target="_blank"><i class="button_icons fab fa-codepen"></i>codepen</a></li>
                     <li class="footer__li"><a href='mailto:shadyagmy@yahoo.com'><i class="fas fa-envelope-square"></i>shadyagmy@yahoo.com</a></li>
                     <li class="footer__li"></i><a><i class="fas fa-mobile-alt"></i>+201020285787</a></li>  
-                    <li class="footer__li"><a><i class="fas fa-location-arrow"></i>Suez, Egypt</a></li>
+                    <li class="footer__li"><a><i class="fas fa-location-arrow"></i>Cairo, Egypt</a></li>
                     
 
                 </ul>
@@ -443,7 +457,7 @@
                 boxClass:     'wow',      
                 animateClass: 'animation', 
                 offset:       0,    
-                mobile:       true,       
+                mobile:       false,       
                 live:         true   
             }   
         )
@@ -451,7 +465,7 @@
 
         window.addEventListener('scroll', function(e) {
 
-        if( $(window).scrollTop() == 0) {
+        if( $(window).scrollTop() <= 10) {
             $('.wow').removeClass('animation');
             // $('.wow').removeAttr('style');
             wow.init();
