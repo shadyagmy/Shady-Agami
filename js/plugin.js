@@ -3742,22 +3742,23 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
 
 // Page nice scroll
 let bodyScroll = function() {
-    if (window.matchMedia("(min-width: 900px)").matches){
-        $("html").niceScroll({
-            cursorcolor: "#C7493A",
-            cursoropacitymin: .4, 
-            cursoropacitymax: .9, 
-            cursorwidth: "8px",
-            cursorborder: "1px solid #689775",
-            cursorborderradius: "10px",
-            zindex: 99999999,
-            scrollspeed: 90,
-            mousescrollstep: 30,   
-            hwacceleration: true,
-            boxzoom: true,
-            dblclickzoom: true,
-            gesturezoom: true,
-        }); 
+    // if (window.matchMedia("(min-width: 900px)").matches)
+    if (false){
+        // $("html").niceScroll({
+        //     cursorcolor: "#C7493A",
+        //     cursoropacitymin: .4, 
+        //     cursoropacitymax: .9, 
+        //     cursorwidth: "8px",
+        //     cursorborder: "1px solid #689775",
+        //     cursorborderradius: "10px",
+        //     zindex: 99999999,
+        //     scrollspeed: 90,
+        //     mousescrollstep: 30,   
+        //     hwacceleration: true,
+        //     boxzoom: true,
+        //     dblclickzoom: true,
+        //     gesturezoom: true,
+        // }); 
     } else{
         $("body").css("overflow-y","visible");
     }
