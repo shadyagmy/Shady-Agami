@@ -3991,34 +3991,30 @@ window.addEventListener("touchmove", progressNumberAdd);
 progressNumberAdd()
 
 
-//Hide scroll when i click on projects link
-
-var links = document.querySelectorAll('.projects .project a');
-var nav = document.querySelector('.nav');
-
-for (let i = 0; i < links.length; i++){
-    links[i].onclick = function(){
+$(".project a").each(function(i, el) {
+    $(el).on("click", function() {
         document.body.style.overflowY = 'hidden';
-        nav.style.zIndex = "1";
+        var id = $(el).attr("href");
+        console.log(id)
+        $(id).fadeIn(600);
+    }) 
+})
 
-    }
-}
+var closedLinks = $('.project-describtion__close');
+$(closedLinks).each(function(i, el) {
+    $(el).on("click", function()  {
+        document.body.style.overflowY = 'visible';
+        $(el).closest(".project-describtion").fadeOut()
+    } )
+})
 
-var closedLinks = document.querySelectorAll('.project-describtion__close');
-for (let i = 0; i < closedLinks.length; i++){
-    closedLinks[i].onclick = function(){
-        document.body.style.overflowY = 'auto';
-        nav.style.zIndex = "9999";
-    }
-}
-
-var closedBtnLinks = document.querySelectorAll('.project-describtion__btnClose');
-for (let i = 0; i < closedBtnLinks.length; i++){
-    closedBtnLinks[i].onclick = function(){
-        document.body.style.overflowY = 'auto';
-        nav.style.zIndex = "9999";
-    }
-}
+var closedBtnLinks = $('.project-describtion__btnClose');
+$(closedBtnLinks).each(function(i, el) {
+    $(el).on("click", function()  {
+        document.body.style.overflowY = 'visible';
+        $(el).closest(".project-describtion").fadeOut()
+    } )
+})
 
 
 // //popup any certification when click on it
